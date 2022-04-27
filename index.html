@@ -18,17 +18,19 @@
 <header class="header" id="header">
     <div class="container">
         <div class="header__inner">
-            <a href="" class="header__logo"></a>
+            <img src="img/SAPR_logo_white.svg" alt="" class="header__logo">
 
             <nav class="nav" id="nav">
-                <a href="" class="nav__link">исследовать</a>
-                <a href="" class="nav__link">партнёры</a>
+                <a href="#observe" class="nav__link">исследовать</a>
+                <a href="#slider" class="nav__link">партнёры</a>
                 <a href="" class="nav__link">методические материалы</a>
                 <a href="" class="nav__link">контакты</a>
             </nav>
         </div>
     </div>
 </header>
+
+<div class="page">
 
 <section class="intro">
     <div class="container container--intro">
@@ -39,10 +41,53 @@
             <h1 class="intro__title">
                 СИСТЕМЫ АВТОМАТИЗИРОВАННОЙ<br>ПОДДЕРЖКИ ПРИНЯТИЯ РЕШЕНИЙ
             </h1>
-            <a href="" class="btn btn--intro">информация о поступлении</a>
+            <a href="http://www.tstu.ru/r.php?r=postup.abitur.priem" class="btn btn--intro">информация о поступлении</a>
         </div>
     </div>
 </section>
+
+<section class="observe" id="observe">
+    <div class="container">
+        <div class="observe__inner">
+            <h3 class="observe__uptitle">Чтобы в первый день не потеряться на кафедре -</h3>
+            <h2 class="observe__tite">ИССЛЕДУЙТЕ ЕЁ ПРЯМО<br>СЕЙЧАС!</h2>
+            <div class="observe__circle">
+                <img src="img/img2.png" alt="">
+                <p class="observe__subtitle">Сделано с помощью Sketch Up<br>студентами кафедры САПР</p>
+            </div>
+            <div class="observe__btns">
+                <button class="btn btn--white observe__video">видеоролик</button>
+                <button class="btn observe__model">исследовать!</button>
+            </div>
+        </div>
+    </div>
+    <img src="img/img1.png" alt="" class="circle circle--1">
+    <div class="circle circle--2"></div>
+    <div class="circle circle--3"></div>
+    <div class="circle circle--4"></div>
+    <div class="circle circle--5"></div>
+</section>
+
+<section class="slider__block" id="slider">
+    <h3 class="slider__title">Предприятия партнёры</h3>
+    <div class="slider">
+        <div class="slider__item">
+            <a id="partner-rostelecom" href="https://tambov.rt.ru/" class="partner-link"></a>
+            <a id="partner-snowmedia" href="http://snow-media.ru/" class="partner-link"></a>
+            <a id="partner-skobeev" href="https://seo.skobeeff.ru/" class="partner-link"></a>
+        </div>
+        <div class="slider__item">
+            <a id="partner-ascon" href="https://ascon.ru/" class="partner-link"></a>
+            <a id="partner-demis" href="https://demis.ru/" class="partner-link"></a>
+        </div>
+        <div class="slider__item">
+            <a id="partner-lanta" href="http://lanta-net.ru/" class="partner-link"></a>
+            <a id="partner-krtex" href="http://кртех.рф/" class="partner-link"></a>
+        </div>
+    </div>
+</section>
+
+</div>
     
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" type="text/javascript"></script>
 <script src="js/slick.min.js"></script>
