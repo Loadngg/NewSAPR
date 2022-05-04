@@ -23,7 +23,7 @@
             <nav class="nav" id="nav">
                 <a href="#observe" class="nav__link">исследовать</a>
                 <a href="#slider" class="nav__link">партнёры</a>
-                <a href="" class="nav__link">методические материалы</a>
+                <a href="#library" class="nav__link">методические материалы</a>
                 <a href="" class="nav__link">контакты</a>
             </nav>
         </div>
@@ -56,8 +56,8 @@
                 <p class="observe__subtitle">Сделано с помощью Sketch Up<br>студентами кафедры САПР</p>
             </div>
             <div class="observe__btns">
-                <button class="btn btn--white observe__video">видеоролик</button>
-                <button class="btn observe__model">исследовать!</button>
+                <button id="youtube" class="btn btn--white observe__video" onclick="showOverflow('youtube-overflow')">видеоролик</button>
+                <button onclick="showOverflow('model-overflow')" class="btn observe__model">исследовать!</button>
             </div>
         </div>
     </div>
@@ -67,6 +67,20 @@
     <div class="circle circle--4"></div>
     <div class="circle circle--5"></div>
 </section>
+
+<div class="overflow hidden transparent" id="youtube-overflow">
+    <iframe class="overflow__frame" allowfullscreen data-src="https://www.youtube.com/embed/PAlr8FL23XU" src="about:blank" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+    <div class="overflow__close" onclick="hideOverflow()">
+        <img src="img/close.svg" alt="">
+    </div>
+</div>
+
+<div class="overflow hidden transparent" id="model-overflow">
+    <iframe class="overflow__frame" allowfullscreen data-src="https://3dwarehouse.sketchup.com/embed.html?mid=975e39ba-792e-46b3-9f85-5176c4a11063" src="about:blank" frameborder="0" scrolling="no"></iframe>
+    <div class="overflow__close" onclick="hideOverflow()">
+        <img src="img/close.svg" alt="">
+    </div>
+</div>
 
 <section class="slider__block" id="slider">
     <h3 class="slider__title">Предприятия партнёры</h3>
@@ -87,7 +101,29 @@
     </div>
 </section>
 
+<section class="lib" id="library">
+    <div class="container">
+        <div class="lib__inner">
+            <h3 class="lib__title">методические материалы</h3>
+            <p class="lib__subtitle">
+                Для вашего удобства мы собрали список литературы,<br>с которой вам придётся столкнуться во время обучения
+            </p>
+            <div class="btn lib__btn" onclick="showOverflow('lib-overflow')">библиотека</div>
+        </div>
+    </div>
+</section>
+
+<div class="overflow hidden transparent" id="lib-overflow">
+    <iframe class="overflow__frame" data-src="library.html" src="about:blank" frameborder="0"></iframe>
+    <div class="overflow__close" onclick="hideOverflow()">
+        <img src="img/close.svg" alt="">
+    </div>
 </div>
+
+</div>
+
+<footer class="footer" id="footer">
+</footer>
     
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" type="text/javascript"></script>
 <script src="js/slick.min.js"></script>

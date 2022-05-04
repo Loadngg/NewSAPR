@@ -31,24 +31,24 @@ $(document).ready(function(){
 });
 
 // overflow
-// function showOverflow(blockId) {
-//     currBlockId = blockId;
-//     block = document.getElementById(currBlockId);
-//     iframe = block.firstElementChild;
-//     iframe.src = iframe.dataset.src;
-//     block.classList.remove('hidden'); 
-//     setTimeout(function(){
-//         block.classList.remove('transparent')
-//     }, 20)
-// };
+function showOverflow(blockId) {
+    currBlockId = blockId;
+    block = document.getElementById(currBlockId);
+    iframe = block.firstElementChild;
+    iframe.src = iframe.dataset.src;
+    block.classList.remove('hidden'); 
+    setTimeout(function(){
+        block.classList.remove('transparent')
+    }, 20)
+};
 
-// function hideOverflow() {
-//     block.classList.add('transparent'); 
-//     setTimeout(function(){
-//         block.classList.add('hidden')
-//         iframe.src = "about:blank";
-//     }, 500);
-// }
+function hideOverflow() {
+    block.classList.add('transparent'); 
+    setTimeout(function(){
+        block.classList.add('hidden')
+        iframe.src = "about:blank";
+    }, 500);
+}
 
 // Animation
 // const animItems = document.querySelectorAll('.anim-items');
