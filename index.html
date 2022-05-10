@@ -28,12 +28,15 @@
         <div class="header__inner">
             <img src="img/SAPR_logo_white.svg" alt="" class="header__logo">
 
-            <nav class="nav" id="nav">
+            <nav class="nav hide" id="nav">
                 <a href="#observe" class="nav__link">исследовать</a>
                 <a href="#slider" class="nav__link">партнёры</a>
                 <a href="#library" class="nav__link">методические материалы</a>
-                <!-- <a href="#footer" class="nav__link">контакты</a> -->
             </nav>
+
+            <button class="nav-toggle" id="nav_toggle" type="button">
+                <span class="nav-toggle__item">Menu</span>
+            </button>
         </div>
     </div>
 </header>
@@ -112,7 +115,7 @@
 <section class="lib" id="library">
     <div class="container">
         <div class="lib__inner">
-            <h3 class="lib__title">методические материалы</h3>
+            <h3 class="lib__title">Методические материалы</h3>
             <p class="lib__subtitle">
                 Для вашего удобства мы собрали список литературы,<br>с которой вам придётся столкнуться во время обучения
             </p>
@@ -122,7 +125,7 @@
 </section>
 
 <div class="overflow hidden transparent" id="lib-overflow">
-    <iframe class="overflow__frame" data-src="library.html" src="about:blank" frameborder="0"></iframe>
+    <iframe class="overflow__frame overflow__frame--library" data-src="library.html" src="about:blank" frameborder="0"></iframe>
     <div class="overflow__close" onclick="hideOverflow()">
         <img src="img/close.svg" alt="">
     </div>

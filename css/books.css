@@ -50,7 +50,7 @@ p {
   vertical-align: middle;
   cursor: pointer;
   border-radius: 3.3rem;
-  border: none;
+  border: 3px solid #E56025;
   background-color: #E56025;
   color: #fff;
   font-size: 1.2rem;
@@ -64,12 +64,10 @@ p {
 }
 .btn:hover {
   background-color: #fff;
-  outline: 3px solid #E56025;
   color: #000;
 }
 .btn--white {
   background-color: #fff;
-  outline: 3px solid #E56025;
   color: #000;
 }
 .btn--white:hover {

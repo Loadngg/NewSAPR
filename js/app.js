@@ -50,74 +50,37 @@ function hideOverflow() {
     }, 500);
 }
 
-// Animation
-// const animItems = document.querySelectorAll('.anim-items');
-
-// if (animItems.length > 0) {
-//     window.addEventListener('scroll', animOnScroll);
-//     function animOnScroll() {
-//         for (let index = 0; index < animItems.length; index++) {
-//             const animItem = animItems[index];
-//             const animItemH = animItem.offsetHeight;
-//             const animItemOffset = offset(animItem).top;
-//             const animStart = 4;
-
-//             let animItemPoint = window.innerHeight - animItemH / animStart;
-//             if (animItemH > window.innerHeight) {
-//                 animItemPoint = window.innerHeight - window.innerHeight / animStart;
-//             }
-
-//             if ((scrollY > animItemOffset - animItemPoint) && scrollY < (animItemOffset + animItemH)) {
-//                 animItem.classList.add('show');
-//             }
-//         }
-//     }
-
-//     function offset(el) {
-//         const rect = el.getBoundingClientRect(),
-//         scrollLeft = window.scrollX || document.documentElement.scrollLeft,
-//         scrollTop = window.scrollY || document.documentElement.scrollTop;
-//         return {
-//             top: rect.top + scrollTop,
-//             left: rect.left + scrollLeft
-//         }
-//     }
-
-//     setTimeout(() => {
-//         animOnScroll();
-//     }, 300) 
-// }
-
 // Nav
-// let navBtn = document.getElementById('nav_toggle');
-// let nav = document.getElementById('nav');
-// let navLinks = document.getElementsByClassName('nav__link');
+let header = document.getElementById('header');
+let navBtn = document.getElementById('nav_toggle');
+let nav = document.getElementById('nav');
+let navLinks = document.getElementsByClassName('nav__link');
 
-// navBtn.onclick = function (event) {
-//     event.preventDefault();
+navBtn.onclick = function (event) {
+    event.preventDefault();
 
-//     if (nav.classList.contains('active')) {
-//         nav.classList.add('hide');
-//         setTimeout(function(){
-//             nav.classList.remove('active');
-//             header.classList.remove('active');
-//         }, 300);
-//         navBtn.classList.remove('active');
-//     } else {
-//         nav.classList.add('active');
-//         nav.classList.remove('hide');
-//         navBtn.classList.add('active');
-//         header.classList.add('active');
-//     }
-// }
+    if (nav.classList.contains('active')) {
+        nav.classList.add('hide');
+        setTimeout(function(){
+            nav.classList.remove('active');
+            header.classList.remove('active');
+        }, 300);
+        navBtn.classList.remove('active');
+    } else {
+        nav.classList.add('active');
+        nav.classList.remove('hide');
+        navBtn.classList.add('active');
+        header.classList.add('active');
+    }
+}
 
-// for (let i = 0; i < navLinks.length; i++) {
-//     navLinks[i].addEventListener('click', function() {
-//         nav.classList.add('hide');
-//         setTimeout(function(){
-//             nav.classList.remove('active');
-//             header.classList.remove('active');
-//         }, 300);
-//         navBtn.classList.remove('active');  
-//     });
-// }
+for (let i = 0; i < navLinks.length; i++) {
+    navLinks[i].addEventListener('click', function() {
+        nav.classList.add('hide');
+        setTimeout(function(){
+            nav.classList.remove('active');
+            header.classList.remove('active');
+        }, 300);
+        navBtn.classList.remove('active');  
+    });
+}
