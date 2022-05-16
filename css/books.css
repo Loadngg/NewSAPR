@@ -76,8 +76,39 @@ p {
 }
 .btn--intro {
   margin: 5.2rem auto 0;
-  width: 450px;
-  height: 70px;
-  padding: 1.6rem 1.4rem 1.4rem;
+  padding: 1.6rem 3rem;
   font-size: 1.6rem;
+  line-height: 0.8;
+}
+@media (max-width: 790px) {
+  .btn {
+    font-size: 1rem;
+  }
+  .btn--intro {
+    font-size: 1.3rem;
+    line-height: 1.2;
+    padding: 1.3rem 1rem;
+  }
+}
+@media (max-width: 600px) {
+  .btn--intro {
+    margin-top: 3rem;
+    padding: 1rem;
+  }
+}
+@media (max-width: 420px) {
+  .btn--intro {
+    font-size: 1rem;
+    padding: 0.7rem 0.9rem;
+  }
+}
+@media (max-width: 790px) {
+  .book-desc {
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width: 600px) {
+  .book-item {
+    min-width: 250px;
+  }
 }
