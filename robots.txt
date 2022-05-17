@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /img/
+Disallow: /js/
+Disallow: /css/
+Sitemap: http://sapr.tstu.ru/sitemap.xml
+Host: sapr.tstu.ru
+
+User-agent: Googlebot
+Allow: /
+ 
+User-agent: Yandex
+Allow: /img/
+Disallow: /js/
+Disallow: /css/

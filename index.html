@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" prefix="og: http://ogp.me/ns#">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,6 +17,52 @@
     <meta name="msapplication-TileColor" content="#2b5797">
     <meta name="theme-color" content="#333333">
 
+    <meta name="description" content="Добро пожаловать на кафедру САПР Тамбовского Государственного Технического Университета. Мы выпускаем специалистов Международного стандарта!"/>
+    <meta name="keywords" content="ТГТУ, САПР, программирование, образование, информатика, технологии"/>
+
+    <meta name="robots" content="all"/>
+
+    <meta name="Author" content="Ярослав Аверин">
+    <meta name="Copyright" content="САПР - ТГТУ">
+    <meta name="Address" content="Россия, Тамбоская область, Тамбов, Ленинградская улица, дом 1">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Кафедра САПР – ТГТУ">
+    <meta property="og:description" content="Добро пожаловать на кафедру САПР Тамбовского Государственного Технического Университета. Мы выпускаем специалистов Международного стандарта!">
+    <meta property="og:url" content="http://sapr.tstu.ru">
+    <meta property="og:image" content="/img/bg.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="ТГТУ САПР">
+    <meta property="og:locale" content="ru_RU">
+
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "CollegeOrUniversity",
+          "name": "Кафедра САПР - ТГТУ",
+          "alternateName": "САПР",
+          "url": "http://sapr.tstu.ru/",
+          "logo": "http://sapr.tstu.ru/favicon.ico",
+          "contactPoint": [{
+            "@type": "ContactPoint",
+            "telephone": "+74752630238",
+            "contactType": "technical support",
+            "contactOption": "TollFree",
+            "areaServed": "RU",
+            "availableLanguage": "Russian"
+          },{
+            "@type": "ContactPoint",
+            "telephone": "+74752632601",
+            "contactType": "technical support",
+            "contactOption": "TollFree",
+            "areaServed": "RU",
+            "availableLanguage": "Russian"
+          }],
+          "sameAs": "https://vk.com/saprtstu"
+        }
+    </script>
+
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Кафедра "САПР" – ТГТУ</title>
@@ -26,7 +72,7 @@
 <header class="header" id="header">
     <div class="container">
         <div class="header__inner">
-            <img src="img/SAPR_logo_white.svg" alt="" class="header__logo">
+            <img src="img/SAPR_logo_white.svg" alt="Лого САПР" class="header__logo">
 
             <nav class="nav hide" id="nav">
                 <a href="#observe" class="nav__link">исследовать</a>
@@ -78,7 +124,7 @@
             <h2 class="observe__title">ИССЛЕДУЙТЕ ЕЁ ПРЯМО<br>СЕЙЧАС!</h2>
             <div class="observe__group">
                 <div class="observe__circle">
-                    <img src="img/img2.png" alt="">
+                    <img src="img/img2.png" alt="фотография">
                     <p class="observe__subtitle">Сделано с помощью Sketch Up<br>студентами кафедры САПР</p>
                 </div>
                 <div class="observe__btns">
@@ -88,7 +134,7 @@
             </div>
         </div>
     </div>
-    <img src="img/img1.png" alt="" class="circle circle--1">
+    <img src="img/img1.png" alt="фотография" class="circle circle--1">
     <div class="circle circle--2"></div>
     <div class="circle circle--3"></div>
     <div class="circle circle--4"></div>
@@ -98,14 +144,14 @@
 <div class="overflow hidden transparent" id="youtube-overflow">
     <iframe class="overflow__frame" allowfullscreen data-src="https://www.youtube.com/embed/PAlr8FL23XU" src="about:blank" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
     <div class="overflow__close" onclick="hideOverflow()">
-        <img src="img/close.svg" alt="">
+        <img src="img/close.svg" alt="Закрыть">
     </div>
 </div>
 
 <div class="overflow hidden transparent" id="model-overflow">
     <iframe class="overflow__frame" allowfullscreen data-src="https://3dwarehouse.sketchup.com/embed.html?mid=975e39ba-792e-46b3-9f85-5176c4a11063" src="about:blank" frameborder="0" scrolling="no"></iframe>
     <div class="overflow__close" onclick="hideOverflow()">
-        <img src="img/close.svg" alt="">
+        <img src="img/close.svg" alt="Закрыть">
     </div>
 </div>
 
@@ -143,7 +189,7 @@
 <div class="overflow hidden transparent" id="lib-overflow">
     <iframe class="overflow__frame overflow__frame--library" data-src="library.html" src="about:blank" frameborder="0"></iframe>
     <div class="overflow__close" onclick="hideOverflow()">
-        <img src="img/close.svg" alt="">
+        <img src="img/close.svg" alt="Закрыть">
     </div>
 </div>
 
@@ -179,7 +225,7 @@
         </div>
     </div>
     <div class="footer__circle">
-        <img src="img/SAPR_logo_white.svg" alt="logo" class="footer__logo">
+        <img src="img/SAPR_logo_white.svg" alt="Лого САПР" class="footer__logo">
     </div>
 </footer>
 
