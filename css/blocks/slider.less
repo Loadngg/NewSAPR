@@ -1,0 +1,217 @@
+// main: ../style.less
+
+.slider__block {
+    width: 100%;
+    max-width: inherit;
+    background-color: @blue;
+    height: 450px;
+}
+
+.slider__title {
+    width: 100%;
+    color: @white;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.slick-slider{
+	min-width: 0;
+}
+
+.slick-list {
+	overflow: hidden;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.slick-track{
+	display: flex;
+	align-items: flex-start;
+}
+
+.slider {
+	position: relative;
+}
+
+.slider .slick-arrow{
+	position: absolute;
+	top: 40%;
+	z-index: 1000;
+	font-size: 0;
+	width: 30px;
+	height: 50px;
+    border: none;
+    opacity: 0.65;
+}
+
+.slider .slick-arrow:hover {
+    opacity: 0.4;
+}
+
+.slider .slick-arrow.slick-prev{
+    left: 90px; 
+	background: url('../img/control-left.svg') 0 0 / 100% no-repeat;
+    background-size: contain;
+}
+.slider .slick-arrow.slick-next{
+	right: 90px;
+	background: url('../img/control-right.svg') 0 0 / 100% no-repeat;
+    background-size: contain;
+}
+.slider .slick-arrow.slick-disabled{
+	opacity: 0.2;
+}
+
+.slider__item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.partner-link {
+    display: block;
+    width: 300px;
+    height: 300px;
+    padding: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+a#partner-rostelecom {
+    background-image: url("../img/logo-rostelecom.png");
+}
+
+a#partner-snowmedia {
+    background-image: url("../img/logo-snowmedia.png");
+    width: 400px;
+}
+
+a#partner-skobeev {
+    background-image: url("../img/logo-skobeev.png");
+}
+
+a#partner-ascon {
+    background-image: url("../img/logo-ascon.png");
+    background-position: center 77px;
+    width: 400px;
+}
+
+a#partner-demis {
+    background-image: url("../img/logo-demis.png");
+    width: 400px;
+}
+
+a#partner-lanta {
+    background-image: url("../img/logo-lanta.png");
+}
+
+a#partner-krtex {
+    background-image: url("../img/logo-krtex.png");
+}
+
+@media @netbook {
+    .partner-link {
+        width: 230px;
+    }
+
+    a#partner-snowmedia {
+        width: 230px;
+    }
+    
+    a#partner-ascon {
+        background-position: center 100px;
+        width: 230px;
+    }
+    
+    a#partner-demis {
+        width: 230px;
+    }
+
+    .slider .slick-arrow.slick-arrow.slick-next {
+        right: 2rem;
+    }
+
+    .slider .slick-arrow.slick-prev {
+        left: 2rem;
+    }
+}
+
+@media @tablet-l {
+    .slider__block {
+        height: 350px;
+    }
+
+    .slider__item {
+        height: 170px;
+    }
+
+    .partner-link {
+        width: 170px;
+    }
+
+    a#partner-snowmedia {
+        width: 170px;
+    }
+    
+    a#partner-ascon {
+        background-position: center 116px;
+        width: 170px;
+    }
+    
+    a#partner-demis {
+        width: 170px;
+    }
+
+    .slider .slick-arrow{
+        top: 30%;
+    }
+
+    .slider .slick-arrow.slick-arrow.slick-next {
+        right: .5rem;
+    }
+
+    .slider .slick-arrow.slick-prev {
+        left: .5rem;
+    }
+}
+
+@media @tablet-m {
+    .slider__block {
+        height: auto;
+    }
+
+    .slider__item {
+        flex-direction: column;
+    }
+
+    .slider__item {
+        height: 350px;
+    }
+
+    .partner-link {
+        width: 200px;
+        margin-bottom: 10px;
+    }
+
+    a#partner-snowmedia {
+        width: 200px;
+    }
+    
+    a#partner-ascon {
+        background-position: center;
+        width: 200px;
+    }
+    
+    a#partner-demis {
+        width: 200px;
+    }
+
+    .slider .slick-arrow{
+        top: 40%;
+    }
+}

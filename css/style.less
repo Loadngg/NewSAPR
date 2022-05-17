@@ -1,0 +1,52 @@
+// compress: true
+
+@import "vars";
+
+html {
+    font-size: 15px;
+}
+
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 1rem;
+    color: @black;
+    position: relative;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    font-weight: 700;
+}
+
+section {
+    padding: 3rem 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.page {
+    overflow: hidden;
+}
+
+// Blocks
+@import "blocks/container.less";
+@import "blocks/header.less";
+@import "blocks/contacts.less";
+@import "blocks/nav.less";
+@import "blocks/intro.less";
+@import "blocks/observe.less";
+@import "blocks/slider.less";
+@import "blocks/library.less";
+@import "blocks/footer.less";
+@import "blocks/overflow.less";
+
+
+// Helpers
+@import "title.less";
+@import "btns.less";

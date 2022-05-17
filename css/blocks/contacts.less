@@ -1,0 +1,38 @@
+// main: ../style.less
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1.6rem;
+    font-size: 1.2rem;
+    line-height: 1.25;
+    color: @white;
+    justify-content: space-between;
+
+    .nav__link {
+        margin: 0 0 0 1rem;
+        padding: 0;
+
+        &:last-child {
+            text-transform: lowercase;
+        }
+    }
+}
+
+.tel,
+.email {
+    align-items: center;
+    display: flex;
+}
+
+@media @tablet-l {
+    .contacts {
+        align-items: flex-end;
+    }
+}
+
+@media @tablet-s {
+    .contacts {
+        font-size: .9rem;
+    }
+}

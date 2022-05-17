@@ -1,0 +1,31 @@
+// main: ../style.less
+
+.header {
+    position: fixed;
+    width: 100%;
+    padding: .6rem 0;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+    transition: background-color .1s linear;
+
+    background-color: @blue;
+    box-shadow: 0 3px 10px fade(@black, 80);
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo {
+    width: 135px;
+}
+
+@media @tablet-s {
+    .header__logo {
+        width: 100px;
+    }
+}
