@@ -28,7 +28,7 @@ p {
   max-width: 460px;
   height: 225px;
   padding: 1rem;
-  margin: 0.3rem 0.6rem;
+  margin: 0.3rem;
   background-color: #fff;
   text-align: center;
   transition: outline 0.2s ease-in-out;
