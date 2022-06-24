@@ -25,8 +25,8 @@ $(document).ready(function(){
         infinity: true,
 		fade: true,
   		cssEase: 'linear',
-        autoplay:true,
-        autoplaySpeed:2000,
+        autoplay: true,
+        autoplaySpeed: 2000,
     });
 });
 

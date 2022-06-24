@@ -64,7 +64,7 @@
 
 .slider__item {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     height: 300px;
     background-position: center;
@@ -74,8 +74,8 @@
 
 .partner-link {
     display: block;
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     padding: 0;
     background-position: center;
     background-repeat: no-repeat;
@@ -83,52 +83,35 @@
 }
 
 a#partner-rostelecom {
-    background-image: url("../img/logo-rostelecom.png");
+    background-image: url("../img/logo-rostelecom.svg");
 }
 
 a#partner-snowmedia {
-    background-image: url("../img/logo-snowmedia.png");
-    width: 400px;
+    background-image: url("../img/logo-snowmedia.svg");
 }
 
 a#partner-skobeev {
-    background-image: url("../img/logo-skobeev.png");
+    background-image: url("../img/logo-skobeev.svg");
 }
 
 a#partner-ascon {
-    background-image: url("../img/logo-ascon.png");
-    background-position: center 77px;
-    width: 400px;
+    background-image: url("../img/logo-ascon.svg");
 }
 
 a#partner-demis {
-    background-image: url("../img/logo-demis.png");
-    width: 400px;
+    background-image: url("../img/logo-demis.svg");
 }
 
 a#partner-lanta {
-    background-image: url("../img/logo-lanta.png");
+    background-image: url("../img/logo-lanta.svg");
 }
 
 a#partner-krtex {
-    background-image: url("../img/logo-krtex.png");
+    background-image: url("../img/logo-krtex.svg");
 }
 
 @media @netbook {
     .partner-link {
-        width: 230px;
-    }
-
-    a#partner-snowmedia {
-        width: 230px;
-    }
-    
-    a#partner-ascon {
-        background-position: center 100px;
-        width: 230px;
-    }
-    
-    a#partner-demis {
         width: 230px;
     }
 
@@ -151,19 +134,6 @@ a#partner-krtex {
     }
 
     .partner-link {
-        width: 170px;
-    }
-
-    a#partner-snowmedia {
-        width: 170px;
-    }
-    
-    a#partner-ascon {
-        background-position: center 116px;
-        width: 170px;
-    }
-    
-    a#partner-demis {
         width: 170px;
     }
 
@@ -195,20 +165,13 @@ a#partner-krtex {
 
     .partner-link {
         width: 200px;
-        margin-bottom: 10px;
+        margin-bottom: 1rem;
     }
 
-    a#partner-snowmedia {
-        width: 200px;
-    }
-    
-    a#partner-ascon {
-        background-position: center;
-        width: 200px;
-    }
-    
-    a#partner-demis {
-        width: 200px;
+    a#partner-skobeev,
+    a#partner-demis,
+    a#partner-krtex {
+        margin-bottom: 0;
     }
 
     .slider .slick-arrow{
